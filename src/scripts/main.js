@@ -1,11 +1,14 @@
 import "../styles/styles.css";
 //import "@picoss/pico/css/pico.min.css";
-import 
+import Aos from "aos";
+import "aos/dist/aos.css";
 // Add imports here
 
 console.log("What?");
-console.log("Hello world, from main.js! This is confusinng");
+console.log("Hello world, from main.js!");
 if (typeof window !== "undefined") {
+  console.log("Hello world, from main.js!");
+  Aos.init();
   // Put code that runs ONLY in the browser here -- this is most likely where
   // MOST of your code should go.
   //
