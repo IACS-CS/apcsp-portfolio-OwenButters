@@ -1,7 +1,8 @@
 import "../styles/styles.css";
 //import "@picoss/pico/css/pico.min.css";
 import Aos from "aos";
-import "aos/dist/aos.css"; //correct import path
+import "aos/dist/aos.css"; //correct import pat
+import NavItem from "../components/NavItem.astro";
 // Add imports here
 
 console.log("What?");

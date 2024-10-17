@@ -1,37 +1,40 @@
 ---
 import Page from "../components/Page.astro";
+import NavItem from "../components/NavItem.astro";
 ---
 
 <Page title="Owen Butters's Portfolio">
-  <!-- Container with centered text -->
-  <div style="text-align: center;">
- 
-    <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
-      Owen Butters's Portfolio
-    </h1>
+  <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+    Owen Butters's Portfolio
+  </h1>
 
-    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
-      Project Menu
-    </h2>
+  <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+    Project Menu
+  </h2>
 
-    <!-- Navigation for projects -->
-    <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
-      <ul>
-        <li>
-          <a href="./projects/binary-search/"> Binary Search Project </a>
-        </li>
-        <!-- More projects to come soon! -->
-      </ul>
-    </nav>
+  <!-- Navigation with imported NavItem components -->
+  <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
+    <ul style="list-style: none; padding: 0;">
+      <NavItem
+        title="Binary Search Project"
+        link="/projects/binary-search/"
+        imageSrc="/images/binary-search.png"
+        blurb="Learn about the binary search algorithm and its implementation."
+      />
+      <NavItem
+        title="APCSP Portfolio"
+        link="/projects/portfolio/"
+        imageSrc="/images/portfolio.png"
+        blurb="A showcase of all my AP Computer Science Principles projects."
+      />
+      <!-- Add more projects here in the future -->
+    </ul>
+  </nav>
 
-    <!-- About me section outside of the nav tag -->
-    <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
-      About me
-    </h2>
-    <p>
-      I am a junior at Innovation Academy Charter School and I am a soccer
-      captain. I am taking AP computer science to see if it is something I want
-      to do in the future.
-    </p>
-  </div></Page
->
+  <h2>About Me</h2>
+  <p>
+    I am a junior at Innovation Academy Charter School and I am a soccer
+    captain. I am taking AP computer science to see if it is something I want to
+    do in the future.
+  </p>
+</Page>
