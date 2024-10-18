@@ -4,6 +4,8 @@ import Aos from "aos";
 import "aos/dist/aos.css"; //correct import path
 // Add imports here
 
+
+
 console.log("What?");
 console.log("Hello world, from main.js!");
 if (typeof window !== "undefined") {

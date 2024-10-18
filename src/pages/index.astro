@@ -1,5 +1,6 @@
 ---
 import Page from "../components/Page.astro";
+import NavItem from '../components/NavItem.astro'; 
 ---
 
 <Page title="Owen Butters's Portfolio">
@@ -27,27 +28,27 @@ import Page from "../components/Page.astro";
     <!-- Navigation with normal text size for links -->
     <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
       <ul style="list-style: none; padding: 0;">
-        <li>
-          <a href="./projects/binary-search/" style="font-size: 1.5rem;">
-            Binary Search Project
-          </a>
-        </li>
-        <!-- More projects to come soon! -->
-      </ul>
-    </nav>
-    <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
-      <ul style="list-style: none; padding: 0;">
-        <li>
-          <a href="Coming soon!" style="font-size: 1.5rem;"> Coming soon! </a>
-        </li>
-        <!-- More projects to come soon! -->
-      </ul>
-    </nav>
-    <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
-      <ul style="list-style: none; padding: 0;">
-        <li>
-          <a href="Coming soon!" style="font-size: 1.5rem;"> Coming soon! </a>
-        </li>
+        <NavItem
+          title="Binary Search Project"
+          link="/projects/binary-search/"
+          imageSrc="/images/binary-search.png"
+          blurb="Learn about the binary search algorithm and its implementations"
+        />
+
+        <NavItem
+          title="APCSP Portfolio"
+          link="/projects/portfolio/"
+          imageSrc="/image/portfolio.png"
+          blurb="A showcase of all my AP Comupter Science Principles Projects."
+        />
+
+        <NavItem
+          title="Coming Soon!"
+          link="/projects/coming-soon"
+          imageSrc="/image/coming-soon.png"
+          blurb="This project is coming soon!"
+        />
+
         <!-- More projects to come soon! -->
       </ul>
     </nav>
@@ -81,14 +82,16 @@ import Page from "../components/Page.astro";
       the future.
     </p>
   </div>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <!--9 line breaks(br) -->
+  <footer>
+    &copy; 2024 <b>Owen Butters</b>, last updated October 17. All Rights
+    Reserved.
+    <br />
+    <a
+      href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
+      >Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a
+    >
+  </footer>
 </Page>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-<!--9 line breaks(br) -->
-<footer>
-  &copy; 2024 <b>Owen Butters</b>, last updated October 17. All Rights Reserved.
-  <br/>
-  <a
-    href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
-    >Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a
-  >
-</footer>
