@@ -28,3 +28,13 @@ body * {
   position: relative;
   z-index: 2;
 }
+
+a {
+  color: #2a94da; /* Change this to your desired color */
+  text-decoration: none; /* Remove underline, optional */
+}
+
+a:hover {
+  color: #1abc9c; /* Optional: Change color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
