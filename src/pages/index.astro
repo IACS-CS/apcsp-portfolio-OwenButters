@@ -1,17 +1,6 @@
 ---
 import Page from "../components/Page.astro";
 import NavItem from "../components/NavItem.astro";
-import anime from "animejs/lib/anime.es.js"; // Keep this import
----
-
-const runAnimation = () => {
-  anime({
-    targets: ".circle",
-    translateX: 250,
-  })
-};
-
-document.addEventListener("DOMContentLoaded", runAnimation);
 ---
 
 <Page title="Owen Butters's Portfolio">
@@ -24,13 +13,6 @@ document.addEventListener("DOMContentLoaded", runAnimation);
     >
       Owen Butters's Portfolio
     </h1>
-
-    <div
-      class="circle"
-      style="width: 50px; height: 50px; background: red; border-radius: 50%;"
-    >
-    </div>
-
     <h2
       style="font-size: 2.5rem;"
       data-aos="fade-left"
@@ -39,7 +21,7 @@ document.addEventListener("DOMContentLoaded", runAnimation);
     >
       Project Menu:
     </h2>
-
+    <br />
     <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
       <ul style="list-style: none; padding: 0;">
         <NavItem
@@ -48,21 +30,23 @@ document.addEventListener("DOMContentLoaded", runAnimation);
           imageSrc="/Images/binary-search.png"
           blurb="Learn about the binary search algorithm and its implementations"
         />
+        <br />
         <NavItem
           title="APCSP Portfolio"
           link="/projects/portfolio/"
           imageSrc="/Images/portfolio.png"
           blurb="A showcase of all my AP Computer Science Principles Projects."
         />
+        <br />
         <NavItem
-          title="Coming Soon!"
+          title="Upcoming Project"
           link="/projects/coming-soon"
           imageSrc="/Images/coming-soon.png"
-          blurb="This project is coming soon!"
+          blurb="This project is under development and will be available soon!"
         />
       </ul>
     </nav>
-
+    <br />
     <h2
       style="font-size: 2rem;"
       data-aos="fade-down"
