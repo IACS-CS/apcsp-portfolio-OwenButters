@@ -3,6 +3,7 @@ import Page from "../components/Page.astro";
 import NavItem from "../components/NavItem.astro";
 ---
 
+<br />
 <Page title="Owen Butters's Portfolio">
   <div style="text-align: center;">
     <h1
@@ -19,36 +20,56 @@ import NavItem from "../components/NavItem.astro";
       data-aos-duration="1000"
       data-aos-delay="500"
     >
+      <br />
       Project Menu:
     </h2>
     <br />
     <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
       <ul style="list-style: none; padding: 0;">
-        <NavItem
-          title="Binary Search Project"
-          link="/projects/binary-search/"
-          imageSrc="/Images/binary-search.png"
-          blurb="Learn about the binary search algorithm and its implementations"
-        />
-        <br />
-        <NavItem
-          title="APCSP Portfolio"
-          link="/projects/portfolio/"
-          imageSrc="/Images/portfolio.png"
-          blurb="A showcase of all my AP Computer Science Principles Projects."
-        />
-        <br />
-        <NavItem
-          title="Upcoming Project"
-          link="/projects/coming-soon"
-          imageSrc="/Images/coming-soon.png"
-          blurb="This project is under development and will be available soon!"
-        />
+        <li style="margin-bottom: 1rem;">
+          <button
+            style="background-color: #007bff; color: white; padding: 1rem; border: none; border-radius: 5px;"
+          >
+            <NavItem
+              title="Binary Search Project"
+              link="/projects/binary-search/"
+              imageSrc="/Images/binary-search.png"
+              blurb="Learn about the binary search algorithm and its implementations"
+              imageSize={100}
+            />
+          </button>
+        </li>
+        <li style="margin-bottom: 1rem;">
+          <button
+            style="background-color: #28a745; color: white; padding: 1rem; border: none; border-radius: 5px;"
+          >
+            <NavItem
+              title="APCSP Portfolio"
+              link="/projects/portfolio/"
+              imageSrc="/Images/portfolio.png"
+              blurb="A showcase of all my AP Computer Science Principles Projects."
+              imageSize={100}
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            style="background-color: #fd7e14; color: white; padding: 1rem; border: none; border-radius: 5px;"
+          >
+            <NavItem
+              title="Upcoming Project"
+              link="/projects/coming-soon"
+              imageSrc="/Images/coming-soon.png"
+              blurb="This project is under development and will be available soon!"
+              imageSize={100}
+            />
+          </button>
+        </li>
       </ul>
     </nav>
     <br />
     <h2
-      style="font-size: 2rem;"
+      style="font-size: 2rem; color: white;"
       data-aos="fade-down"
       data-aos-duration="1000"
       data-aos-delay="500"
@@ -57,7 +78,7 @@ import NavItem from "../components/NavItem.astro";
     </h2>
 
     <p
-      style="font-size: 1.25rem;"
+      style="font-size: 1.25rem; color: white;"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-delay="500"
@@ -66,7 +87,7 @@ import NavItem from "../components/NavItem.astro";
       captain.
     </p>
     <p
-      style="font-size: 1.25rem;"
+      style="font-size: 1.25rem; color: white;"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-delay="500"

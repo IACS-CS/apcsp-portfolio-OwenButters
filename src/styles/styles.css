@@ -43,3 +43,4 @@ a:hover {
   text-decoration: underline; /* Optional: Add underline on hover */
 }
 
+@import 'blaze/scss/blaze.scss';

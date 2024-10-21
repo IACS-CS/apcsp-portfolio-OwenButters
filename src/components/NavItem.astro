@@ -1,11 +1,14 @@
 ---
-const { title, link, imageSrc, blurb } = Astro.props;
+// Props being passed into the component
+const { title, link, imageSrc, blurb, imageSize } = Astro.props;
 ---
 
-<li>
-  <a href={link}>
-    <img src={imageSrc} alt={title} width="50" height="50" />
-    <h3>{title}</h3>
-    <p>{blurb}</p>
-  </a>
-</li>
+<a href={link} style="text-decoration: none; color: black;">
+  <div style="display: flex; align-items: center;">
+    <img src={imageSrc} alt={title} width={imageSize} height={imageSize} />
+    <div style="margin-left: 1rem;">
+      <h3 style="margin: 0; font-size: 1.5rem; color: black;">{title}</h3>
+      <p style="margin: 0.5rem 0 0 0; color: black;">{blurb}</p>
+    </div>
+  </div>
+</a>
