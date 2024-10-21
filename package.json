@@ -1,4 +1,6 @@
 {
+  "type": "module",
+
   "name": "web-design-portfolio",
   "version": "1.0.0",
   "description": "Web Design Portfolio Assignment",
@@ -13,9 +15,11 @@
   "license": "ISC",
   "dependencies": {
     "@picocss/pico": "^2.0.6",
+    "animejs": "^3.2.2",
     "aos": "^2.3.4",
     "astro": "^4.15.9",
     "particles.js": "^2.0.0",
     "vivus": "^0.4.6"
   }
 }
+  
