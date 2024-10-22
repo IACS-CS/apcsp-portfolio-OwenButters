@@ -7,7 +7,7 @@ let { title, assignment } = Astro.props;
 <Page title={title}>
   <div class="container">
     <header>
-      <h1>
+      <h1 style="color: white;">
         Project: {title}
       </h1>
       <nav>
@@ -15,10 +15,10 @@ let { title, assignment } = Astro.props;
       </nav>
     </header>
     <article>
-      <p>
+      <p style="color: white;">
         Assignment: {assignment}
       </p>
-      <hr>
+      <hr />
       <slot />
     </article>
   </div>
