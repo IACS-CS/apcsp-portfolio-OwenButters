@@ -4,6 +4,11 @@ import "../styles/styles.css";
 import Aos from "aos";
 import "aos/dist/aos.css"; // Correct import path
 
+import { defineConfig } from "astro/config";
+
+export default defineConfig({
+  base: "/apcsp-portfolio-OwenButters/", // Use your exact repository name here
+});
 // Add imports here
 
 console.log("What?");
