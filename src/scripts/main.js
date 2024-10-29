@@ -7,7 +7,7 @@ import "aos/dist/aos.css"; // Correct import path
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  base: "/repository-name/", // Update to match your repository name
+  base: "/apcsp-portfolio-OwenButters/", // Update to match your repository name
 });
 // Add imports here
 
