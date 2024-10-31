@@ -1,9 +1,9 @@
+import "@blaze/css";
 import "../styles/styles.css";
 // Import Pico CSS if needed
 // import "@picocss/pico/css/pico.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css"; // Correct import path
-
 // Add imports here
 
 console.log("What?");

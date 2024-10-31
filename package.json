@@ -11,6 +11,7 @@
     "start": "node main.js"
   },
   "dependencies": {
+    "@blaze/css": "^12.2.0",
     "@picocss/pico": "^2.0.6",
     "animejs": "^3.2.2",
     "aos": "^2.3.4",
