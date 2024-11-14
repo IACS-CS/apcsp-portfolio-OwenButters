@@ -41,3 +41,13 @@ a:hover {
   text-decoration: underline; /* Optional: Add underline on hover */
 }
 
+.ball {
+  width: 80px;
+  height: 80px;
+  margin-top: -890px;
+  margin-left: 125px;
+  border-radius: 50%;
+  background-color: rgb(128,128,128);
+  float: left;
+}
+
