@@ -27,43 +27,34 @@ import NavItem from "../components/NavItem.astro";
     <nav data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
       <ul style="list-style: none; padding: 0;">
         <li style="margin-bottom: 1rem;">
-          <button
-            style="background-color: #007bff; color: white; padding: 1rem; border: none; border-radius: 5px;"
-          >
-            <NavItem
-              title="Binary Search Project"
-              link="./projects/binary-search/"
-              imageSrc="./Images/binary-search.png"
-              blurb="Learn about my group's usage of the binary search algorithm and its implementations in guessing games"
-              imageSize={100}
-            />
-          </button>
+          <NavItem
+            title="Binary Search Project"
+            link="./projects/binary-search/"
+            imageSrc="./Images/binary-search.png"
+            blurb="Learn about my group's usage of the binary search algorithm and its implementations in guessing games!"
+            imageSize={100}
+            color="#007bff"
+          />
         </li>
         <li style="margin-bottom: 1rem;">
-          <button
-            style="background-color: #28a745; color: white; padding: 1rem; border: none; border-radius: 5px;"
-          >
-            <NavItem
-              title="APCSP Portfolio"
-              link="./projects/portfolio/"
-              imageSrc="./Images/portfolio.png"
-              blurb="A showcase of all my AP Computer Science Principles Projects including this one."
-              imageSize={100}
-            />
-          </button>
+          <NavItem
+            title="APCSP Portfolio"
+            link="./projects/APCSP/"
+            imageSrc="./Images/portfolio.png"
+            blurb="A showcase of all my AP Computer Science Principles Projects including this one!"
+            imageSize={100}
+            color="#28a745"
+          />
         </li>
         <li>
-          <button
-            style="background-color: #fd7e14; color: white; padding: 1rem; border: none; border-radius: 5px;"
-          >
             <NavItem
               title="Upcoming Project"
               link="./projects/coming-soon"
               imageSrc="./Images/coming-soon.png"
               blurb="This project is under development and will be available soon!"
               imageSize={100}
+              color="#fd7e14"
             />
-          </button>
         </li>
       </ul>
       <br />
@@ -116,7 +107,7 @@ import NavItem from "../components/NavItem.astro";
         <br />
         &copy; 2024 <b>Owen Butters</b>, last updated October 17. All Rights
         Reserved.
-      </footer">
+      </footer>
     </div>
   </div>
 </Page>

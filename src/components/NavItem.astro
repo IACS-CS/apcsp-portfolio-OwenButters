@@ -1,14 +1,27 @@
 ---
 // Props being passed into the component
-const { title, link, imageSrc, blurb, imageSize } = Astro.props;
+const { title, link, imageSrc, blurb, imageSize, color } = Astro.props;
 ---
 
-<a href={link} style="text-decoration: none; color: black;">
+<a
+  class="c-button"
+  href={link}
+  style={`
+    background-color:${color};
+    text-decoration: none;  
+    color: black; 
+    padding: 1rem; 
+    border: none; 
+    border-radius: 5px;
+    max-width: 35em;
+    white-space: wrap;
+  `}
+>
   <div style="display: flex; align-items: center;">
     <img src={imageSrc} alt={title} width={imageSize} height={imageSize} />
     <div style="margin-left: 1rem;">
-      <h3 style="margin: 0; font-size: 1.5rem; color: black;">{title}</h3>
-      <p style="margin: 0.5rem 0 0 0; color: black;">{blurb}</p>
+      <h3 style="margin: 0; font-size: 1.5rem;">{title}</h3>
+      <p style="margin: 0.5rem 0 0 0; ">{blurb}</p>
     </div>
   </div>
 </a>
