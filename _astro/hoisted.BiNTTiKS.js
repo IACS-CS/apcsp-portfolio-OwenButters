@@ -1347,8 +1347,23 @@ let animation = anime.timeline({
 animation
   .add({
     targets: ".three",
+    translateY: 1825,
+    backgroundColor: "rgb(253, 126, 20)",
+  })
+  .add({
+    targets: ".three",
+    translateY: 1675,
+    backgroundColor: "rgb(201, 30, 192)",
+  })
+  .add({
+    targets: ".three",
+    translateY: 1525,
+    backgroundColor: "rgb(146, 49, 212)",
+  })
+  .add({
+    targets: ".three",
     translateY: 1375,
-    backgroundColor: "rgb(253, 126, 20)",
+    backgroundColor: "rgb(207, 31, 31)",
   })
   .add({
     targets: ".three",
@@ -1358,22 +1373,7 @@ animation
   .add({
     targets: ".three",
     translateY: 1075,
-    backgroundColor: "rgb(123, 0, 255)",
-  })
-    .add({
-    targets: ".three",
-    translateY: 925,
-    backgroundColor: "rgb(253, 126, 20)",
-  })
-  .add({
-    targets: ".three",
-    translateY: 1225,
-    backgroundColor: "rgb(40, 167, 70)",
-  })
-  .add({
-    targets: ".three",
-    translateY: 1075,
-    backgroundColor: "rgb(123, 0, 255)",
+    backgroundColor: "rgb(0, 123, 255)",
   })
   .add({
     targets: ".one",
