@@ -1360,6 +1360,21 @@ animation
     translateY: 1075,
     backgroundColor: "rgb(123, 0, 255)",
   })
+    .add({
+    targets: ".three",
+    translateY: 925,
+    backgroundColor: "rgb(253, 126, 20)",
+  })
+  .add({
+    targets: ".three",
+    translateY: 1225,
+    backgroundColor: "rgb(40, 167, 70)",
+  })
+  .add({
+    targets: ".three",
+    translateY: 1075,
+    backgroundColor: "rgb(123, 0, 255)",
+  })
   .add({
     targets: ".one",
     translateY: 1375,
