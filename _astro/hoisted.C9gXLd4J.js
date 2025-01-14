@@ -1377,8 +1377,23 @@ animation
   })
   .add({
     targets: ".one",
-    translateY: 1375,
+    translateY: 1825,
     backgroundColor: "rgb(253, 126, 20)",
+  })
+  .add({
+    targets: ".one",
+    translateY: 1675,
+    backgroundColor: "rgb(201, 30, 192)",
+  })
+  .add({
+    targets: ".one",
+    translateY: 1525,
+    backgroundColor: "rgb(146, 49, 212)",
+  })
+  .add({
+    targets: ".one",
+    translateY: 1375,
+    backgroundColor: "rgb(207, 31, 31)",
   })
   .add({
     targets: ".one",
@@ -1388,12 +1403,27 @@ animation
   .add({
     targets: ".one",
     translateY: 1075,
-    backgroundColor: "rgb(123, 0, 255)",
+    backgroundColor: "rgb(0, 123, 255)",
+  })
+  .add({
+    targets: ".two",
+    translateY: 1825,
+    backgroundColor: "rgb(253, 126, 20)",
+  })
+  .add({
+    targets: ".two",
+    translateY: 1675,
+    backgroundColor: "rgb(201, 30, 192)",
+  })
+  .add({
+    targets: ".two",
+    translateY: 1525,
+    backgroundColor: "rgb(146, 49, 212)",
   })
   .add({
     targets: ".two",
     translateY: 1375,
-    backgroundColor: "rgb(253, 126, 20)",
+    backgroundColor: "rgb(207, 31, 31)",
   })
   .add({
     targets: ".two",
@@ -1403,7 +1433,7 @@ animation
   .add({
     targets: ".two",
     translateY: 1075,
-    backgroundColor: "rgb(123, 0, 255)",
+    backgroundColor: "rgb(0, 123, 255)",
   });
   console.log(animation);
   console.log(anime);
